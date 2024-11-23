@@ -5,18 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bingo Navideño</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
     <div class="container-fluid text-center">
-      <h1 class="mt-5">Bingo Navideño</h1>
-      <div class="row">
+      <h1 class="mt-5 display-1 text-danger border-white bg-white rounded-pill">
+        Bingo Navideño
+      </h1>
+      <div class="container-fluid row">
         <div class="col-md-3">
           <div id="number-grid" class="number-grid"></div>
         </div>
         <div class="col-md-9">
-          <div id="bingo-number" class="number-display">--</div>
-          <div id="timer" class="timer">Próximo número en: 10s</div>
+          <div id="bingo-number" class="number-display display-1 custom-size">
+            --
+          </div>
+          <div id="timer" class="timer font-weight-bold rounded display-4">
+            Próximo número en: 10s
+          </div>
           <button id="start-button" class="button">Start</button>
           <button id="pause-button" class="button">Pause</button>
           <button id="reset-button" class="button">Reset</button>

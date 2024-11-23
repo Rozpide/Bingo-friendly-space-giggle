@@ -2,7 +2,9 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f8ff;
+  background-image: url("https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU");
+  background-size: cover;
+  background-position: center;
   text-align: center;
   padding: 50px;
 }
@@ -11,13 +13,13 @@ h1 {
   font-size: 3em;
 }
 #bingo-number {
-  font-size: 8em;
-  color: #008000;
   margin: 20px;
   transition: transform 0.5s;
-}
-.number-display {
+  border: 3px transparent snow;
+  padding: 10px;
+  border-radius: 10px;
   animation: bounce 1s infinite;
+  color: red;
 }
 @keyframes bounce {
   0%,
@@ -30,7 +32,7 @@ h1 {
 }
 .timer {
   font-size: 1.5em;
-  color: #ff4500;
+  color: #ff0011;
   margin: 20px;
 }
 .button {
@@ -40,18 +42,6 @@ h1 {
   cursor: pointer;
   border: none;
   border-radius: 10px;
-}
-#start-button {
-  background-color: #32cd32;
-  color: white;
-}
-#pause-button {
-  background-color: #ffa500;
-  color: white;
-}
-#reset-button {
-  background-color: #ff0000;
-  color: white;
 }
 .number-grid {
   display: grid;
@@ -67,6 +57,21 @@ h1 {
   border-radius: 5px;
 }
 .number-grid .drawn {
-  background-color: #ff4500;
+  background-color: #ff0000;
   color: #ffffff;
+}
+#start-button {
+  background-color: red;
+  color: yellow;
+}
+#pause-button {
+  background-color: deeppink;
+  color: black;
+}
+#reset-button {
+  background-color: #008000;
+  color: white;
+}
+.custom-size {
+  font-size: 10rem; /* Ajusta este valor según tus necesidades */
 }
