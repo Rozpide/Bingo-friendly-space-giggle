@@ -14,7 +14,7 @@ window.onload = function() {
 
   function generateBingoNumbers() {
     bingoNumbers = [];
-    for (let i = 1; i <= 99; i++) {
+    for (let i = 1; i <= 90; i++) {
       bingoNumbers.push(i);
     }
     createNumberGrid();
@@ -23,7 +23,7 @@ window.onload = function() {
   function createNumberGrid() {
     const grid = document.getElementById("number-grid");
     grid.innerHTML = "";
-    for (let i = 1; i <= 99; i++) {
+    for (let i = 1; i <= 90; i++) {
       const numberCell = document.createElement("div");
       numberCell.id = `number-${i}`;
       numberCell.textContent = i;
@@ -109,7 +109,7 @@ window.onload = function() {
     generateBingoNumbers();
     drawnNumbers = [];
     document.getElementById("bingo-number").innerText = "--";
-    document.getElementById("timer").innerText = "Próximo número en: 10s";
+    document.getElementById("timer").innerText = "Próximo número en: 6s";
     isPaused = false;
   });
 };
