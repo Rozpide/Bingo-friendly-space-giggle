@@ -13,42 +13,40 @@ window.onload = function() {
   let countdown = 10;
 
   const numberFacts = {
-    1: "un palitoo",
-    2: "un patito feo",
+    1: "un palito",
+    2: "el patito feo",
     3: "tres tristes tigres",
     4: " la suela de mi zapato",
-    5: "mala rima",
+    5: "boca abierta",
     6: "el barrigon",
     7: "buena suerte",
     8: "el pelocho",
     9: "el cabezon",
-    10: "la nota del instituto",
     11: "los dos palitos",
     12: "el dulce",
     13: "mala suerte",
-    14: "tuerce botas",
+    14: "catuerce ",
     15: "la niña bonita",
-    16: "es que no veis?",
-    17: "es pa siempre",
     18: "otro pelocho",
     19: "paga y bebe",
-    20: "el que miente",
-    21: "patito palito",
+    21: "patito y palito",
     22: "los dos patitos",
-    23: "lo ves o no lo ves",
-    24: "tuece el zapato",
-    25: "nananana te la inco",
+    24: "tuerce el zapato",
+    25: "el turron",
     26: "tu suerte la ves",
-    27: "es pa siempre",
     28: "siguiente pelocho",
     29: "pero mira como llueve",
     30: "calienta, calienta",
     33: "la edad de cristo",
-    55: "bonita rima",
-    69: "mal pensadoooos....",
+    55: "los guardia civiles",
     90: "el abuelo"
     // Añadir datos para otros números
   };
+  let voices = [];
+
+  function loadVoices() {
+    voices = window.speechSynthesis.getVoices();
+  }
 
   function generateBingoNumbers() {
     bingoNumbers = [];
